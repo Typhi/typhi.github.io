@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Introduction to the Roadmap (2016.07)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+    }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+        list-style-type: square;
+    }
+
+    li {
+        margin-bottom: 0px;
+        list-style-position: outside;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+</style>
+<link rel="icon" href="data:;base64,=">
+<header>
+    <strong>Introduction to the Roadmap (2016.07)</strong>
+    <hr>
+</header>
+<main>
+    <p>The presentation was prepared to introduce my team to how we deal with the roadmap, and I wrote it out in text anyway, so here it is.</p>
+
+    <h2 id="IntroductiontoRoadmapping(2016.07)-Introduction">Introduction</h2>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-What&#39;sgoingon?">What's Going On?</h3>
+    <p>My goal here is <strong>not</strong> to instill a sense of trust and belief in the roadmap. The roadmap is a complicated beast, and it has an effect on your work, and your perspective is important for it. It <strong>should</strong> be questioned.</p>
+    <p>I want to help you with the following:</p>
+    <ul>
+        <li>
+            <p>Understanding the decisions behind the roadmap, either in a way that assures you that it's a reasonable decision, or giving you the understanding to spot poor road-mapping better, and enable you to question it.</p>
+        </li>
+        <li>
+            <p>Equipping you to have more influence on the roadmap by ensuring we speak the same language and understand each other's priorities.</p>
+        </li>
+    </ul>
+    <p>Do not bow to the roadmap. The roadmap is a tool, not a desirable end goal in itself.</p>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Whatistheroadmapandwhatisitfor?">What Is the Roadmap and What Is It For?</h3>
+    <p>The roadmap is a mix of a prioritized and scheduled list.</p>
+
+    <p><em>Function of the roadmap:</em></p>
+    <ul>
+        <li>
+            <p><strong>Representation of prioritization</strong>: To remind us of what is important and keep us on track with that. It's easy to make a plan of the things that seem important and then forget them the next week when daily business comes up or the next great idea comes along.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: A team is working on a cool new feature and has some great ideas that will take more time to add. Great! Oh, but wait, then we can't do this event on time.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Schedule</strong>: Allows us to make things happen in a timely and efficiently manner.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: If we decide in the middle of August that we want to have an event for summer, we'd be too late to do so in a stress-free manner. Knowing when things will happen allows us to prepare.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Communication and coordination</strong>: Making sure other departments, other sections of the team, etc., know what's going on and are on board.</p>
+        </li>
+        <li>
+            <p><strong>Reflect the vision for the product</strong>: When viewed from a high level, there's a goal that we're working towards that the roadmap reflects.</p>
+        </li>
+    </ul>
+    <br />
+    <p><em>Constant Change:</em><br />The roadmap needs to be constantly adjusted because:</p>
+    <ul>
+        <li>
+            <p>Information becomes more accurate and meaningful as we get closer to actually doing something for real.</p>
+        </li>
+        <li>
+            <p>New ideas come along, which may change priorities.</p>
+        </li>
+        <li>
+            <p>The situation changes—players want something else, another game releases an amazing feature, marketing needs a new marketing channel, etc.</p>
+        </li>
+    </ul>
+
+    <p><em>Don't Build <strong>Too</strong> Far Ahead:</em></p>
+    <p>These can also be reasons to not build things far in advance of when they'll be needed. The situation changes, information becomes outdated, and planned features may no longer be relevant.</p>
+
+    <p>Not releasing stuff can build up large amounts of debt. You need to maintain this feature as the rest of the game changes, which is harder to know if you're doing properly if it's not released. There's a loss of knowledge by the time it gets released. You may end up needing to bug-fix something written six months ago. That's all time that could have been spent finishing something, releasing it, and learning from it, instead of only preparing for the future.</p>
+
+    <h2 id="IntroductiontoRoadmapping(2016.07)-Prioritisation">Prioritisation</h2>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Howdoesstuffgetontheroadmap?"><strong>How Does Stuff Get on the Roadmap?</strong></h3>
+    <p>It's not our job to put good things on the roadmap. Good is <em>easy</em>. Good is also wasteful. It's our job to be doing the best (reasonably possible) thing.<br />How do we measure best? Generally with "business value," which we generally represent in Euros.</p>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Ugh,businessvalue?Whataboutfun?"><strong>Ugh, Business Value? What About Fun?</strong></h3>
+    <p>There are a couple of misconceptions to clear up about business value. It isn't just about directly making money. A lot of things can be expressed as business value, with some work.</p>
+    <ul>
+        <li>
+            <p>Running after short-term monetary gain is not always the best way to go. Maybe a risky new feature is the best decision, or investing in tools for a couple of sprints. We might see the possibility of even more value later.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: Refactor code so that it's easier to understand and work with. It takes one guy, one sprint, but saves one day per sprint. That will start paying back after eight sprints. Not a bad trade. Not all refactoring can be expressed this way, but once you've got something like: "This piece of code makes me hate my life at least three times per week," it's not too far a step to express it as business value.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Business value is not at odds with player happiness. Keeping players happy provides business value.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: Players complain because something takes 24 hours to complete, so they're bored. One solution: give them a new feature to entertain them while they wait. Fewer players leaving the game due to boredom → more money.</p>
+                </li>
+                <li>
+                    <p>There's a line to walk between monetizing something "as much as possible" and "too much." That line is not as thin as some people think it is, or as thin as I used to think it was. The company, and the industry as a whole, have been discovering this by progressively monetizing our games more heavily.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Expressing things in business value can be difficult. Sometimes it's not worth the trouble and can just be seen intuitively (small things). Sometimes it's just a bit harder than you might expect but is doable by checking with someone else for ideas. Sometimes we haven't found a solution yet for expressing it as business value, but we're still <em>pretty sure</em> we should be doing it.</p>
+    <ul>
+        <li>
+            <p><em>Example</em>: Fixing minor bugs.</p>
+        </li>
+    </ul>
+
+    <p><em>Easier Alternatives:</em></p>
+    <p>It can sometimes be useful to look at "impact" instead of business value. It's easier and more comfortable to look at direct impacts rather than calculating everything through to money all the time. Just keep in mind that there should be a strong relationship between the expected impact of a feature and business value.</p>
+    <ul>
+        <li>
+            <p><em>Example</em>: App ratings. It's easy to think about what changes to our "ask for ratings" feature will result in nicer app ratings rather than figuring out each time what the business impact will be. Ideally, there's already existing information elsewhere about the business value of higher app ratings.</p>
+        </li>
+        <li>
+            <p><em>Example</em>: We don't need to calculate the business value of a new reward building for an event to compare one against the other but can generally rely on determining how desirable it is (which will nicely correlate to business value).</p>
+        </li>
+    </ul>
+
+    <p>Something else that can be done is roughly estimating the business value <em>relative to the other tasks</em> that are currently on the table, rather than directly assigning a monetary figure to a task.</p>
+
+    <p><em>Think Impact, Not Features:</em></p>
+    <p>Work on something until the desired impact is achieved, then move on to the next impact.<br />The desired impact isn't necessarily achieved when everything one could possibly want from a feature is in the feature, but somewhere along the way. This is why we sometimes end up cutting things. We get to a stage where adding the last 0.2% to this feature isn't as important as the first 10% of the next feature—or just releasing the feature so it can already start generating value.</p>
+    <ul>
+        <li>
+            <p><em>Example</em>: App ratings. Lots of ideas for further improving app ratings. However, with the first round of improvements, we already got to where we wanted to be. So it looks like there's not as much value in picking up additional improvements if there's not much to improve.</p>
+        </li>
+        <li>
+            <p><em>Example</em>: Guild Expeditions. The total amount of things related to this feature is massive. Instead of implementing everything immediately, they picked up the map and fighting as the first things to work on and then released. From that release, we can already start getting the business value out of the feature (and benefit from feedback for the remainder of the work on the feature).</p>
+        </li>
+    </ul>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Whydoyoualwayswanttoroughlyknowhowlongthingswilltake?"><strong>Why Do You Always Want to Roughly Know How Long Things Will Take?</strong></h3>
+    <ol start="1">
+        <li>
+            <p>To make sure that the "investment" matches the expected impact. A lot of people probably agree that it'd be great to add a feature called Hidden Rewards for a sprint, and that might indeed be a good change, but we also have to consider the cost of that time. That's enough time to build half of an event. Maybe that new event would bring more value than Hidden Rewards, and that should be considered.</p>
+        </li>
+        <li>
+            <p>To see if it fits the schedule.</p>
+        </li>
+    </ol>
+
+    <p>...which we'll go to now!</p>
+
+    <h2 id="IntroductiontoRoadmapping(2016.07)-Scheduling">Scheduling</h2>
+    <p>A nice way of working would be a prioritized list of topics. Not even features, but prioritized impacts we'd like to see—with time required per impact taken into account.</p>
+    <p>Unfortunately, beyond that rough time requirement, there are also reasons to attach dates to things. On to Scheduling!</p>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-What&#39;sschedulinggoodfor?">What's Scheduling Good For?</h3>
+    <ul>
+        <li>
+            <p>It allows us to make things happen in a timely and mostly efficient manner. Clear goals and deadlines help everyone be on the same page.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: If we decide right now (June 14th) that we want to have an event for summer, we'd be too late to do so in a stress-free manner, because so many things need to be prepared before actual development can start.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>It provides some predictability for financial purposes.</p>
+            <ul>
+                <li>
+                    <p><em>Example</em>: It helps us make sure we're on track with doing the things we wanted to do, to achieve the best result.</p>
+                </li>
+                <li>
+                    <p><em>Example</em>: We can then see if we're doing well as a company and take action if we need to.</p>
+                    <ul>
+                        <li>
+                            <p><em>Sub-Example</em>: Does it still make sense to hire all those people we planned to?</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>It allows us to hit "external" deadlines, like coordinating with other departments or coordinating with seasons for events.</p>
+        </li>
+    </ul>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Howisthefuturepredicted?"><strong>How Is the Future Predicted?</strong></h3>
+    <p>Predicting the future comes in three varieties. You can plan how long something:</p>
+    <ul>
+        <li>
+            <p><em>Should</em> take: A lot of stuff on the roadmap comes down to this, actually. If we know an impact only makes business sense if it can be done within a certain time, then that's the time we'll schedule for it. If it's actually a lot more complicated, perhaps it doesn't make much business sense to do it, and we could be doing something more valuable with our time. This should of course be re-evaluated when new information comes in.</p>
+        </li>
+        <li>
+            <p><em>Will</em> take: This is for when you've got something you <em>need</em> to do and know roughly how much time it will take. A lot of stuff on the roadmap is a mix of <em>will</em> and <em>should</em>.</p>
+        </li>
+        <li>
+            <p><em>Can</em> take: The amount of time we can dedicate to something before something else becomes more urgent. This is something you will most often see pop up towards the end of sprints or quarters when the next big task isn't quite ready yet.</p>
+        </li>
+    </ul>
+
+    <p>While scheduling things, you should also keep in mind the costs associated with stopping something partway through (efficiency, motivation, etc.) and the synergies between certain types of tasks.</p>
+
+    <p>With seeing the future, we're never operating with 100% certainty. However, we're also not operating with 0% certainty.</p>
+    <p>Everyone who works with the roadmap is, or should be, aware that things have the potential to change. Nothing is set in stone. Plans fail, and things change. If there is an important reason to do it, the plan changes.</p>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-OKlet&#39;schangeallthethings!">OK Let's Change All the Things!</h3>
+    <p>Whoa, wait up.</p>
+    <p>There are also some costs associated with that kind of change, though this depends on how important the roadmap item was and how far along in the process it was. Here are some examples:</p>
+    <ul>
+        <li>
+            <p>Communication: You'll need to re-communicate everything and do a good job of it. Someone with incomplete information can be more dangerous than someone with absolutely no information. Note: this may also upset some people, so you can also spend some time and effort on that.</p>
+        </li>
+        <li>
+            <p>Re-thinking, scheduling, etc.: Trying to remember all the elements kept in mind when the plan was first created. Trying to make everything fit again, etc.</p>
+        </li>
+    </ul>
+
+    <p>Quick Example!</p>
+    <p>Moving an event launch back, when it was one sprint from release. There was more stuff to polish than expected, and there were some unexpected bugs and more sicknesses than usual.</p>
+    <ul>
+        <li>
+            <p>We can't just delay by a few days, but have to delay it a whole two weeks to fit our release cycle. Luckily, we didn't have other content scheduled for then, so we won't be overwhelming players or wasting the "new and shiny" effect too much.</p>
+        </li>
+        <li>
+            <p>We'll need to change the launch communication towards the community. Hope we didn't inform them yet, so we don't look silly and cause questions. The community managers have been through worse.</p>
+        </li>
+        <li>
+            <p>Now we're overlapping with Beta time with another feature team, so we'll delay the other team's testing and either force them to launch a less-tested feature or find another solution.</p>
+        </li>
+        <li>
+            <p>Did we tell PR? They have their press releases ready to go. Oh no, they scheduled a live Let's Play of the event for GDC? Oops.</p>
+        </li>
+        <li>
+            <p>There's no usable footage for our social accounts? Guess they can rush it out next week—when he's already preparing five other videos. They can do it!</p>
+        </li>
+        <li>
+            <p>Right, then we won't have anything ready for this month's newsletter — better tell the writers to figure something else out.</p>
+        </li>
+        <li>
+            <p>Marketing called—they just want to confirm that we're ready to go for the 15th, since they negotiated a great featuring deal with Google.</p>
+        </li>
+        <li>
+            <p>Will we still meet the revenue goals for this quarter? What knock-on effects does that have?</p>
+        </li>
+    </ul>
+
+    <p>It's easy for information to go missing and problems to occur when these kinds of changes are made.</p>
+
+    <h2 id="IntroductiontoRoadmapping(2016.07)-Thingsthatgowrong">Things That Go Wrong</h2>
+    <p>Let's briefly cover some things that can go wrong when working with a roadmap, and why they're going wrong.</p>
+
+    <div class="table-wrap">
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Symptom</th>
+                    <th>Possible Reasons</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>It feels like a task keeps getting pushed further and further back</td>
+                    <td>
+                        <ul>
+                            <li>Next steps are unclear, and work stagnates. Maybe no one seems to feel responsible for it. Someone needs to sacrifice some time to investigate the issue and find solutions, and it never seems like a good time for it.</li>
+                            <li>Topic is on the roadmap for poor reasons (often political).</li>
+                        </ul>
+                    </td>
+                    <td>Re-evaluate the business value of the task as soon as possible. Delays carry costs with them (communication and opportunity costs). Once the relative business value is clear, take action and communicate the action.</td>
+                </tr>
+                <tr>
+                    <td>Something small but important gets scheduled to be done in 6 months</td>
+                    <td>
+                        <ul>
+                            <li>The person in charge of scheduling doesn't share the same understanding of size and importance as you do.</li>
+                        </ul>
+                    </td>
+                    <td>Get on the same page about cost and value.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h2 id="IntroductiontoRoadmapping(2016.07)-Closingremarks">Closing Remarks</h2>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Sowhatwasthatallabout?">So What Was That All About?</h3>
+    <p>I was trying to promote understanding of the roadmap:</p>
+    <ul>
+        <li>
+            <p>Understanding the decisions behind the roadmap, either in a way that assures you that it's a reasonable decision, or giving you the understanding to spot poor road-mapping better, and enable you to question it.</p>
+        </li>
+        <li>
+            <p>Equipping you to have more influence on the roadmap by ensuring we speak the same language and understand each other's priorities.</p>
+        </li>
+    </ul>
+
+    <h3 id="IntroductiontoRoadmapping(2016.07)-Whatdidwetalkabout?">What Did We Talk About?</h3>
+    <p>The roadmap is a representation of prioritization and simultaneously a schedule.</p>
+    <p>Business value is what determines priority on the roadmap.</p>
+    <p>Business value isn't just "short term $$$," but includes taking into account many things, including fun.</p>
+    <p>It's important to know how long things take to maximize impact against time, and fit things into the schedule.</p>
+    <p>The schedule helps make things happen as painlessly as possible and keeps us on track.</p>
+    <p>There are a few different ways of predicting the future, and they're not perfect.</p>
+    <p>Change is an option, but beware of the costs.</p>
+    <p>Some things can go wrong and should be fixed.</p>
+</main>
+
+<footer>
+    <br><br>
+    <p>Posts by Robert Aiking (<i><a href="https://www.linkedin.com/in/robert-aiking/">LinkedIn</a></i>)</p>
+    <p><a href="index.html">⮝ Home</a></p>
+</footer>

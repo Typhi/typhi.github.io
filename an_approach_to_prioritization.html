@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>An approach to prioritization</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+    }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+        list-style-type: square;
+    }
+
+    li {
+        margin-bottom: 0px;
+        list-style-position: outside;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+</style>
+<link rel="icon" href="data:;base64,=">
+<header>
+    <strong>An approach to prioritization</strong>
+    <hr>
+</header>
+<main>
+
+    <p>Context: asked in a Production community about how to balance content and tech debt.</p>
+
+    <h3>Work should have a “Why”</h3>
+    <p>Generally, you want to have a really strong “why” for the stuff you’re working on.</p>
+
+    <ul start="1">
+        <li>Keeping the “why” in mind will help make what you are doing more effective by focusing your attention on what matters.</li>
+        <li>It can help you pick the order in which to do things. I’ll focus more on this aspect of it for the remainder of this post.</li>
+    </ul>
+
+    <p>Your “why” will differ depending on your company, lifecycle stage, business model, etc. Some examples of why you might want to build stuff:</p>
+
+    <ul start="1">
+        <li>It’s important for fulfilling the creative vision of this product</li>
+        <li>It encourages players to come back and play some more</li>
+        <li>It’ll generate money (This is my personal favorite, since my background is Product Management in free-to-play games)</li>
+        <li>Etc</></li>
+    </ul>
+
+    <p>The important thing is that you have a compelling “why.” And you should be able to trace the work you do back to that reason for doing it. Different batches of work are going to be more or less effective at fulfilling that reason. Usually, with a bit of work, we can quantify that difference in some way, which helps us compare the value of different initiatives. I’ll go into that in the following example.</p>
+
+    <p><strong>Example:</strong></p>
+    <p>Example where our “why” is money:</p>
+
+    <ul start="1">
+        <li>Content A: generates 100 money, takes 2 weeks to build</li>
+        <li>Content B: generates 200 money, takes 3 weeks</li>
+        <li>Etc. etc. for more content</li>
+        <li>Tech improvement A: helps us generate content like Content A and B 10% more quickly because it reduces pain, takes 2 weeks</li>
+    </ul>
+
+    <p><strong>Note:</strong></p>
+
+    <ul start="1">
+        <li>I’m using “money” in the example, but it works with other measurements as well.</li>
+        <li>Expressing the value of the tech improvement in a way that makes it comparable to other types of work we do is very helpful.</li>
+    </ul>
+
+    <p>The numbers used do not need to be super precise. Indeed, in many cases, they <em>cannot</em> be precise. But with the example numbers above, you could already use that to prioritize these batches of work relative to each other, and the numbers we are attaching have to be <em>pretty</em> wrong before it stops making sense to use them. In our example above, ‘Content B’ is a better use of our time than ‘Content A.’ ‘Tech improvement A’ makes sense if we are planning to be generating enough content for it to pay off.</p>
+
+    <p><strong>That isn’t quite everything</strong></p>
+    <p>Now, it isn’t quite enough to do some math above to figure out what the best approach is, because we’re only modeling a fraction of the world here: you will likely also need to combine with some extra rules like:</p>
+
+    <ul start="1">
+        <li>“We deliver content at least once a month because we see that we otherwise lose too many players.”</li>
+        <li>“It’s faster to build content C after content D because of synergies.”</li>
+    </ul>
+
+    <p>But it gives you a great foundation and gets you a long way towards a reasonable finish line.</p>
+
+    <h3>Short version</h3>
+
+    <ol start="1">
+        <li>Know <em>why</em> you should do things.</li>
+        <li>Quantify that. Or at least rank them relative to each other.</li>
+        <li>Manually adjust based on constraints and other things not sufficiently captured in the previous step.</li>
+        <li>Now we’ve got an ordered list we can work through!</li>
+    </ol>
+
+
+</main>
+
+<footer>
+    <br><br>
+    <p>Posts by Robert Aiking (<i><a href="https://www.linkedin.com/in/robert-aiking/">LinkedIn</a></i>)</p>
+    <p><a href="index.html">⮝ Home</a></p>
+</footer>

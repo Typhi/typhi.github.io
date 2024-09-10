@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Roadmapping (2021.05)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+    }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+        list-style-type: square;
+    }
+
+    li {
+        margin-bottom: 0px;
+        list-style-position: outside;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+</style>
+<link rel="icon" href="data:;base64,=">
+<header>
+    <strong>Roadmapping (2021.05)</strong>
+    <hr>
+</header>
+<main>
+
+    <h2>The basics</h2>
+    <div class="table-wrap">
+        <table>
+            <colgroup>
+                <col style="width: 48.0px;" />
+                <col style="width: 474.0px;" />
+                <col style="width: 438.0px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>#</strong></p></th>
+                    <th><p><strong>Topic</strong></p></th>
+                    <th><p><strong>Reference</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>1</p></td>
+                    <td>
+                        <p><strong>Exploration</strong></p>
+                        <p>We want to be doing the most valuable thing in pursuit of some goal. In more detail, we want to be generating that value as efficiently as possible, so we actually want to be doing the thing that will generate value most efficiently.</p>
+                        <p>So we collect a list of topics we think might be valuable.</p>
+                    </td>
+                    <td>
+                        <p>Fueled by:</p>
+                        <ul>
+                            <li><p>Brainstorming</p></li>
+                            <li><p>Being inspired by other games</p></li>
+                            <li><p>Seeing a problem in the numbers</p></li>
+                            <li><p>Player feedback</p></li>
+                            <li><p>etc</p></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>2</p></td>
+                    <td>
+                        <p><strong>Prioritization</strong></p>
+                        <p>Then we figure out their rough value, and toss that into an ordered list.</p>
+                    </td>
+                    <td>
+                        <p>Example prioritization decision:</p>
+                        <ul>
+                            <li><p>Guild Expeditions (5m within a year, but 5 sprints)</p></li>
+                            <li><p>Overhaul shop (2m within a year, but 1 sprint) ← much more efficient.</p></li>
+                        </ul>
+                        <p>Note: determining what is most efficient to be working on can be done with <a href="an_approach_to_prioritization.html">KPI targets</a>, but isn't necessary.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>3</p></td>
+                    <td>
+                        <p><strong>Doing stuff</strong></p>
+                        <p>We then work through that list from top to bottom because the list is ordered by efficiency of value generation.</p>
+                        <p>If we were a team of 1, we'd go task by task.</p>
+                        <p>In the case of RoC, we're a team of 30 and cross-functional, so we're often in the situation where we can work on multiple topics at a time, and different people are responsible for doing things at different stages of a task.</p>
+                    </td>
+                    <td>
+                        <p>One person: (missing image)</p>
+                        <p>Lots of people, and cross functional: (missing image)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <h2>Handling various cases</h2>
+    <div class="table-wrap">
+        <table>
+            <colgroup>
+                <col style="width: 240.0px;" />
+                <col style="width: 240.0px;" />
+                <col style="width: 240.0px;" />
+                <col style="width: 240.0px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Issue</strong></p></th>
+                    <th><p><strong>Why care</strong></p></th>
+                    <th><p><strong>Solution</strong></p></th>
+                    <th><p><strong>Extra notes</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>We want to know when things are done</p></td>
+                    <td>
+                        <p>So we can plan ahead and keep things running smoothly</p>
+                        <ul>
+                            <li><p>Example: so we can make sure preparations are ready on time to let feature development start efficiently</p></li>
+                            <li><p>Example: so that the company can do financial planning</p></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>Map the ordered list to a timeline</p>
+                        <ul>
+                            <li><p>Note: This is fairly straightforward because we already had some rough expectations about how long something will take in order to prioritize it properly</p></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>Scheduling comes in 3 varieties. You can plan how long something:</p>
+                        <ul>
+                            <li><p><em>Should</em> take: A lot of stuff on the roadmap comes down to this, actually. If we know an impact only makes business sense if it can be done within a certain time, then that's the time we'll schedule for it. If it's actually a lot more complicated then perhaps it doesn't make much business sense to do it, and we could be doing something more valuable with our time. This should of course also be re-evaluated when other thoughts and new information comes in.</p></li>
+                            <li><p><em>Will</em> take: This is for the case when you've got something you know you <em>need</em> to do, and also know roughly how much time it will take. A lot of stuff on the roadmap is actually a mix of <em>will</em> and <em>should</em>.</p></li>
+                            <li><p><em>Can</em> take: The amount of time we can dedicate to something before something else becomes more urgent. This is something that you will most often see pop up towards the end of sprints or quarters when the next big stuff isn't quite ready yet.</p></li>
+                        </ul>
+                        <p>Further general reading: <a href="introduction_to_roadmap.html">Introduction to Roadmapping (2016.07)</a></p>
+                        <p>Roadmap: Soft Launch H1 2021 (old link)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Our goal changes, therefore what is valuable changes</p><p><em>Example</em>: we care about ltv30 because we noticed it isn't good enough yet</p></td>
+                    <td>
+                        <p>Because we're trying to deliver the most value possible, so want to make sure we're working towards that</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><p>Exploration</p></li>
+                            <li><p>Prioritization</p></li>
+                        </ul>
+                    </td>
+                    <td><p>See step 1+2 above</p></td>
+                </tr>
+                <tr>
+                    <td><p>We sometimes change our mind about the value generation efficiency of a topic</p><p><em>Example</em>: premium commander</p></td>
+                    <td>
+                        <p>Because we're trying to deliver the most value possible, so want to make sure we're working towards that</p>
+                    </td>
+                    <td>
+                        <p>Re-order that topic appropriately</p>
+                        <p>Proceed with the next topic</p>
+                    </td>
+                    <td><p /></td>
+                </tr>
+                <tr>
+                    <td><p>We're a large team of differently specialized people</p></td>
+                    <td>
+                        <p>It's more difficult to be efficiently working on the most valuable thing</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><p>Set up processes</p></li>
+                            <li><p>Create overviews that let you grasp the more complex reality we live in</p></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p><a href="19103788.html">Missing: Production Process Overview</a> REPLACE ME</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>We have bugs to handle</p></td>
+                    <td><p>Value optimization</p></td>
+                    <td>
+                        <p>Ideal case: determine the value of each bugfix</p>
+                        <p>But that's impractical. Too much effort to individually value each bug</p>
+                        <p>So we shortcut it by setting up guidelines</p>
+                    </td>
+                    <td><p>Bugs Handling during Production (old link)</p></td>
+                </tr>
+                <tr>
+                    <td><p>We have minor topics to handle where we can't assign value to them or it's not worth the effort</p></td>
+                    <td><p>Value optimization</p></td>
+                    <td>
+                        <p>It's not realistic to have 30 cross-functional members working at all times on the single most important thing. For example: Timelines are not 100% trustworthy, and our team isn't perfectly balanced across all disciplines.</p>
+                        <p>So there are holes to slip minor topics into. Make use of those holes.</p>
+                    </td>
+                    <td>
+                        <p>Example: end of a sprint and half the FE devs and all the BE devs are finishing up something. Overall more efficient to wait with starting half those FE devs on a new topic since they'd get out of sync with the rest of the team. Have them do some minor stuff where they don't bother people focusing on the more important topics and might make something slightly better.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <h2>Common traps</h2>
+    <ul>
+        <li><p>Getting stuck on one method of exploration</p></li>
+        <li><p>Undisciplined prioritization</p></li>
+        <li><p>Not frequently working on exploration</p></li>
+        <li><p>Not sufficiently examining what value will be generated (e.g. working through a feature checklist)</p></li>
+    </ul>
+
+    <br>
+
+    <h2>Questions</h2>
+    <div class="table-wrap">
+        <table>
+            <colgroup>
+                <col style="width: 340.0px;" />
+                <col style="width: 340.0px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p>Questions</p></th>
+                    <th><p>Answers</p></th>
+                </tr>
+                <tr>
+                    <td><p>How can Product people influence the output and outcomes?</p></td>
+                    <td>
+                        <ul>
+                            <li><p>Do a good job in stage 1 and 2</p></li>
+                            <li><p>Frequently re-do Stage 1 and Stage 2</p></li>
+                            <li><p>Keep Stage 2 and the decisions made there in mind when working on 3</p></li>
+                            <li><p>Add more people. If the structures can support this, this either speeds up the output or increases the bandwidth.</p></li>
+                            <li><p>Develop people in the direction that will support valuable output</p></li>
+                            <li><p>Fire people where the effort of development isn't justified</p></li>
+                            <li><p>Optimize processes</p></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>How is it measured if things are going well?</p></td>
+                    <td>
+                        <ul>
+                            <li><p>Evaluate feature results, see if they matched what we wanted.</p></li>
+                            <li><p>Compare our feelings against feelings we've had in the past in similar situations</p></li>
+                            <li>
+                                <p>Generally meeting expectations</p>
+                                <ul>
+                                    <li><p>(Requires a lot of expectation management)</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</main>
+
+<footer>
+    <br><br>
+    <p>Posts by Robert Aiking (<i><a href="https://www.linkedin.com/in/robert-aiking/">LinkedIn</a></i>)</p>
+    <p><a href="index.html">⮝ Home</a></p>
+</footer>

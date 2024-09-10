@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Example: Production process overview</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+    }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+        list-style-type: square;
+    }
+
+    li {
+        margin-bottom: 0px;
+        list-style-position: outside;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+</style>
+<link rel="icon" href="data:;base64,=">
+<header>
+    <strong>Example: Production process overview</strong>
+    <hr>
+</header>
+<main>
+
+    <h1>Introduction</h1>
+    <p>An example of how you could structure things for a game development team.</p>
+
+    <h1>Summary</h1>
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 402px;" />
+                <col style="width: 448px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Description</strong></p></th>
+                    <th><p><strong>Reference</strong></p></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Everything's based around "epics". In the definition used on this page, epics are completable batches of work assigned to a production phase. (With one or two exceptions, like a general Tech Debt epic we use as a bucket and sometimes pull from.)</p>
+                        <p>We work through epics in rough kanban style.</p>
+                    </td>
+                    <td>
+                        <img src="attachments/19103788/20742161.png?width=300" alt="JIRA Software Kanban Board" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Epics are given a very rough scope and mapped onto the roadmap. This helps us coordinate our efforts, align our expectations, and visualize progress on our way to the next milestone.</p>
+                        <p>The roadmap is constantly being adjusted based on new information.</p>
+                        <p>See also:</p>
+                        <ul>
+                            <li><a href="introduction_to_roadmap.html">Introduction to Roadmapping</a></li>
+                            <li><a href="roadmapping.html">Roadmapping (2021.05)</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="attachments/19103788/20643861.png?width=300" width="500" alt="Hero Roadmap" />
+                        <img src="attachments/19103788/59703298.png?width=500" alt="Roadmap Progress" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Our two-week development cycles consist of working through epics in rough kanban style.</p>
+                    </td>
+                    <td>
+                        <img src="attachments/19103788/20742161.png?width=300" alt="JIRA Software Kanban Board" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>An Epic's Lifecycle</h1>
+    <p>We break our milestones into collections of Epics.</p>
+    <ul>
+        <li><p>Epics are completable batches of work assigned to a production phase. We can use Epics in many places of JIRA to get an easy overview of work remaining.</p></li>
+        <li><p>When far away in time, Epics are undefined and vague. They become more defined the closer we get to working on them.</p></li>
+    </ul>
+
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 136px;" />
+                <col style="width: 136px;" />
+                <col style="width: 136px;" />
+                <col style="width: 136px;" />
+                <col style="width: 136px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Status</strong></p></th>
+                    <th><p><strong>Description</strong></p></th>
+                    <th><p><strong>What needs doing here</strong></p></th>
+                    <th><p><strong>Main driver</strong></p></th>
+                    <th><p><strong>Supporting</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>Idea</p></td>
+                    <td><p>We've identified a chunk of work relevant for our project, and this epic represents that chunk of work. There are probably just a few quick notes in it, and it has been assigned to a production phase.</p></td>
+                    <td><p>Prioritize and schedule working on this against everything else</p></td>
+                    <td><p>PM</p></td>
+                    <td><p>GD</p></td>
+                </tr>
+                <tr>
+                    <td><p>Preparation</p></td>
+                    <td>
+                        <p>Getting a feature ready for execution phase. When transitioning into this phase, there's an “Orientation” meeting with relevant people to make sure we're all on the same page.</p>
+                        <p>Using high-level concepts and mockups, we break down the epic into actionable stories and tasks. Sometimes that's the full development team, sometimes a small group.</p>
+                    </td>
+                    <td><p>High-level concepts, Mockups</p></td>
+                    <td><p>GD, UI</p></td>
+                    <td><p>PM</p></td>
+                </tr>
+                <tr>
+                    <td><p>Open</p></td>
+                    <td>
+                        <p>Ready to be worked on. The team has received enough information about this topic.</p>
+                        <p>(Estimations may or may not be done already. Doesn't matter too much, that's a very small part of it.)</p>
+                    </td>
+                    <td><p>Prioritize and schedule working on this against everything else</p></td>
+                    <td><p>PM</p></td>
+                    <td><p>GD</p></td>
+                </tr>
+                <tr>
+                    <td><p>In progress</p></td>
+                    <td><p>Team is working on executing the tasks in this epic</p></td>
+                    <td><p>Close tickets!</p></td>
+                    <td><p>FE, BE, (Art)</p></td>
+                    <td><p>GD, UI, TA, PM</p></td>
+                </tr>
+                <tr>
+                    <td><p>Closed</p></td>
+                    <td>
+                        <p>We're done and happy that the epic is complete. Time for the next one! We reach this status by having a "Finalization" meeting near the end of work on the epic.</p>
+                        <ul>
+                            <li><p>Surfaces any last issues others might not be aware of</p></li>
+                            <li><p>Gets everyone on the same page</p></li>
+                        </ul>
+                    </td>
+                    <td><p>Celebrate</p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>See also: <a href="https://typhi.atlassian.net/wiki/spaces/IPS/pages/65645/General+thoughts+on+estimations">General thoughts on estimations</a> REPLACE ME</p>
+
+    <h1>Roadmap</h1>
+    <p>The roadmap provides an overview of the epics we're working on along with a time scale!</p>
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 170px;" />
+                <col style="width: 170px;" />
+                <col style="width: 170px;" />
+                <col style="width: 170px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Purpose</strong></p></th>
+                    <th><p><strong>Description</strong></p></th>
+                    <th><p><strong>Team</strong></p></th>
+                    <th><p><strong>Rest of company</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>Easy Overview</p></td>
+                    <td><p>To see where we are in the stage gate process, what our current topics are, and what's upcoming</p></td>
+                    <td><p>X</p></td>
+                    <td><p>X</p></td>
+                </tr>
+                <tr>
+                    <td><p>Planning and discussion aid</p></td>
+                    <td><p>To aid coordinating efforts</p></td>
+                    <td><p>X</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><p>Historical reference</p></td>
+                    <td><p>Where we can look up completed tasks when we need to reference them for some reason</p></td>
+                    <td><p>X</p></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Maintenance</h3>
+    <ul>
+        <li><p>The roadmap is expected to constantly shift and adjust, as we discover new information. Far away tasks become more clear the closer we get.</p></li>
+        <li><p>The lead round discusses the roadmap semi-frequently to ensure alignment across the team and process any new information.</p></li>
+    </ul>
+
+    <h3>Determining timeline</h3>
+    <ul>
+        <li><p>The <strong>timeline for each production phase</strong> is partially based on the stage gate requirements (and thereby adjusting scope as necessary) and partially on summing up the amount of time we allocate for individual epics.</p></li>
+        <li><p>Timeline for <strong>individual epics</strong> is set based partially on: semi-experienced guesses, historical precedent, and timeboxing to what we think an acceptable amount of effort to spend on a feature would be. Because each epic has a goal it is trying to hit, and there are many ways of achieving goals, scope is heavily flexible, which helps these time allocations work out well enough for our purposes.</p></li>
+    </ul>
+
+    <h3>Sprints</h3>
+    <ul>
+        <li><p>Sprints have their rough scope set based on roadmap.</p></li>
+        <li><p>We sanity check and align rough expectations with the team during the planning as needed. </p></li>
+        <li><p>No need for large discussion since we're not currently explicitly holding the devs accountable for not reaching it.</p></li>
+        <li><p>We're running a sort of kanban with a sprint cadence added on top to use as a tool for aligning with the full team and externals.</p></li>
+        <li><p>Note: Artists can have their own board with a slightly different approach.</p></li>
+    </ul>
+
+    <h4>Some sprint preparation notes</h4>
+    <ul>
+        <li>
+            <p>For preparing a sprint planning meeting, you’ll need to answer a bunch of questions for yourself. We won’t go into detail on those now, but some examples:</p>
+            <ul>
+                <li><p>What does the Roadmap say we should be doing?</p></li>
+                <li><p>What is ready to be worked on?</p></li>
+                <li><p>What will each component do more specifically?</p></li>
+            </ul>
+        </li>
+        <li><p>Use epic-swimlanes on the board to set priorities on a larger scale, and drag tickets around within those swimlanes or on the milestone page to set relative priorities within each topic.</p></li>
+        <li>
+            <p>"Idea" status</p>
+            <ul>
+                <li><p>All "stories" start as "ideas", which is the status that represents when it's not yet decided if we should do the story and also don't have an estimation</p></li>
+                <li><p>This can be used to get a quick view of whether a story is good to go yet or not. A ticket should only go to "open" when it's clear that we want to work on it.</p></li>
+                <li><p>Various filters exist on the planning board for getting a handle on this.</p></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Working through an Epic</h1>
+    <img src="attachments/19103788/20742161.png?width=300" alt="JIRA Software Kanban Board" />
+
+    <h3>Workflows</h3>
+    <ul>
+        <li><p>The Sprint Board shows us the stuff we should be working on, and it's ordered by priority top to bottom</p></li>
+        <li><p>For knowing what to work on: right to left (better to finish things than start new things), then top to bottom</p></li>
+        <li>
+            <p>Tickets move to completion from left to right, and if you’re working on a ticket, you’re responsible for taking it through the entire lifecycle. The end is when the work is done, which means the ticket is closed and the branch has been merged.</p>
+            <ul>
+                <li><p>Meaning: you're responsible for testing, for getting your code reviewed (when needed), and for setting up your demos.</p></li>
+            </ul>
+        </li>
+        <li><p>Sometimes there might be more than 1 person working on a story, but we might not necessarily see that from the assignee field. That's fine, we might hear about it in standup, but also might not. What's important: the stories are making their way across the board.</p></li>
+        <li><p>The board contains all tickets relevant for this sprint, and filters are used to see tickets meeting specific criteria (e.g. I’m a BE dev and want to see BE tickets)</p></li>
+    </ul>
+
+    <h3>The structure of a sprint</h3>
+    <img src="attachments/19103788/20840474.png?width=680" alt="Sprint Structure" />
+
+    <h3>Meetings</h3>
+    <p>Brief overview of some typical meetings</p>
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 48px;" />
+                <col style="width: 87px;" />
+                <col style="width: 214px;" />
+                <col style="width: 474px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Level</strong></p></th>
+                    <th><p><strong>Meeting</strong></p></th>
+                    <th><p><strong>Who is there?</strong></p></th>
+                    <th><p><strong>Brief description</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>Epic</p></td>
+                    <td><p>Orientation</p></td>
+                    <td><p>Preparation people + Leads</p></td>
+                    <td>
+                        <p>Sync up on what we want to accomplish with this batch of work and what important elements might be.</p>
+                        <p>Preparation work starts in earnest after this meeting</p>
+                        <p>Depending on the topic we might have a GD concept ready at this meeting already, or maybe we only start afterwards since the goal only becomes clear enough in this meeting.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Epic</p></td>
+                    <td><p>Finalization</p></td>
+                    <td><p>People on it + Leads</p></td>
+                    <td><p>Sync up on the state of the epic when work is almost done to build alignment as well as discover and decide on final issues.</p></td>
+                </tr>
+                <tr>
+                    <td><p>Between the two</p></td>
+                    <td><p>Kick-off</p></td>
+                    <td><p>Full team</p></td>
+                    <td><p>Concept and plans are presented at a high level to the full team</p></td>
+                </tr>
+                <tr>
+                    <td><p>Between the two</p></td>
+                    <td><p>Refinement</p></td>
+                    <td><p>Whoever is needed</p></td>
+                    <td>
+                        <p>Used to get everyone together for further refining of the work to be done, if needed.</p>
+                        <p>Typical structure would be going through the concept for a feature and breaking that down into smaller chunks of work that will later be turned into tickets.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Sprint</p></td>
+                    <td><p>Planning</p></td>
+                    <td><p>Everyone assigned to be working on the relevant epics</p></td>
+                    <td>
+                        <p>Give everyone an overview of what is coming in the next 2 weeks.</p>
+                        <p>Go through the more complicated or questionable tickets, potentially refine further.</p>
+                        <p>Ensure priorities and expectations are clear.</p>
+                        <p>After the meeting, everyone should be able to go work on what is important for the sprint.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Sprint</p></td>
+                    <td><p>Daily Stand up</p></td>
+                    <td><p>Full team</p></td>
+                    <td>
+                        <p>Briefly go through open tasks to see what’s going on and potentially steer based on that information.</p>
+                        <p>Serves also a fail-safe in case more direct communication about issues didn’t happen in the previous 24 hours.</p>
+                        <p>Serves also as a moment to gather groups to spiral off in more detail on things.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Sprint</p></td>
+                    <td><p>Review Meeting</p><p>(note: different from ticket review)</p></td>
+                    <td><p>Full team</p></td>
+                    <td><p>Show off what we’ve done for the rest of the team and company</p></td>
+                </tr>
+                <tr>
+                    <td><p>Sprint</p></td>
+                    <td><p>Retrospective</p></td>
+                    <td><p>In groups of the people that were working on topics together</p></td>
+                    <td><p>Reflect on the past sprint to align and potentially find improvements</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Task types</h3>
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 133px;" />
+                <col style="width: 1065px;" />
+                <col style="width: 599px;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th><p><strong>Task type</strong></p></th>
+                    <th><p><strong>Description</strong></p></th>
+                    <th><p><strong>Examples</strong></p></th>
+                </tr>
+                <tr>
+                    <td><p>Story</p></td>
+                    <td><p>A batch of work that represents added value to the game. We try to keep these small (&lt;2 days).</p></td>
+                    <td><p>[RT] Reward: Unlock a building upgrade</p></td>
+                </tr>
+                <tr>
+                    <td><p>Bugs</p></td>
+                    <td><p>Something's broken, yo</p></td>
+                    <td><p>[FE] Get research + construction menus at the same time (if skillful!)</p></td>
+                </tr>
+                <tr>
+                    <td><p>Art Task</p></td>
+                    <td>
+                        <p>Tickets for producing new art assets, like buildings or characters. Generally, a new building is its own ticket.</p>
+                        <p>Also has a separate workflow.</p>
+                    </td>
+                    <td><p>Stone Age - Barracks 1</p></td>
+                </tr>
+                <tr>
+                    <td><p>GD Task</p></td>
+                    <td><p>GD work that is separate from the execution of building things ingame, like the foundational concepts that we need before we can break down an epic into tickets for devs, or a presentation to the team about the general direction of the game.</p></td>
+                    <td>
+                        <p>Finalize concept Tech Tree </p>
+                        <p>Initial age list</p>
+                        <p>High Level First Session Design</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>UI Task</p></td>
+                    <td><p>UI work that is purely about things that UI can do. Covers both the creation of mockups but also the integration of smaller changes into the game that they don't need a dev to do.</p></td>
+                    <td><p>Mockups: Research tree</p></td>
+                </tr>
+                <tr>
+                    <td><p>Sub-task</p></td>
+                    <td><p>For when the people working on a task would like to organize themselves on a more detailed level. Sometimes used, often not.</p></td>
+                    <td><p>Integrate technology containers in Unity</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Task statuses</h3>
+    <ul>
+        <li><p>Idea</p></li>
+        <li><p>Open</p></li>
+        <li><p>In Progress</p></li>
+        <li><p>Blocked</p></li>
+        <li><p>Review</p></li>
+        <li><p>Demo</p></li>
+        <li><p>Closed</p></li>
+    </ul>
+
+    <h1>Bugs</h1>
+    <p>Bugs partially need special handling.</p>
+    <ul>
+        <li><p>If a bug is in an ongoing epic, it goes into that epic and gets handled there.</p></li>
+        <li><p>If there’s a bug in previously released things, how urgently it gets handled depends on its severity, and we keep bugs within self-set bug limits per priority.</p></li>
+    </ul>
+
+    <h2>Misc</h2>
+    <h3>General notes</h3>
+    <ul>
+        <li><p>"Why" is the most important part of a ticket. If you know <em>why</em>, you can theoretically do the ticket and achieve the goals without knowing the rest, if we're all aligned enough. It is easy to do stuff that doesn't actually accomplish something valuable, and knowing "why" raises the chances of that not happening.</p></li>
+        <li><p>Talk to people, talking is good. None of this is a one-man show so it's a worrying sign when there's NO conversations going on.</p></li>
+        <li><p>Please make sure there's always tickets for what you're working on, it's good to have things written down in the moment that you're working on it (lots of seemingly useful or clear ideas don't survive being put on paper. It's easy to hand-wave away important information in a verbal conversation), they're helpful when a week from now no one knows what we did anymore, and they're a communication tool.</p></li>
+        <li><p>Good tickets are usually small (&lt;2 days). A big ticket is <em>probably</em> a bad ticket.</p></li>
+        <li><p>See also: <a href="https://typhi.atlassian.net/wiki/spaces/IPS/pages/65645/General+thoughts+on+estimations">General thoughts on estimations</a> REPLACE ME</p></li>
+    </ul>
+
+    <h3>JIRA</h3>
+    <ul>
+        <li><p>JIRA should ideally represent our workflow to the point that looking at a ticket's transition buttons or a JIRA board can show you what you need to do from here.</p></li>
+        <li><p>Example boards: Sprint Board, Asset Production Board, Epics board</p></li>
+    </ul>
+
+
+</main>
+
+<footer>
+    <br><br>
+    <p>Posts by Robert Aiking (<i><a href="https://www.linkedin.com/in/robert-aiking/">LinkedIn</a></i>)</p>
+    <p><a href="index.html">⮝ Home</a></p>
+</footer>

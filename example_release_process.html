@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Example release process</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+    }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 20px;
+        list-style-type: square;
+    }
+
+    li {
+        margin-bottom: 0px;
+        list-style-position: outside;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+</style>
+<link rel="icon" href="data:;base64,=">
+<header>
+    <strong>Example release process</strong>
+    <hr>
+</header>
+<main>
+    <p>Here's what a high-level view of a full release <em>could</em> look like for a large web game 30-person team on a 2-week iteration and release cycle. In this example, the team is using the concept of a 'pioneer' deployment, where they deploy the newest version of the game to a subset of all users (the 'pioneer' instance) as a way of reducing the risk and impact of affecting <em>all</em> users with previously undetected issues.</p>
+    <p>----------</p>
+
+    <h3>Prior to starting deploy process:</h3>
+    <ul>
+        <li><p>Work for 2 weeks, testing and integrating discrete batches of work along the way.</p></li>
+    </ul>
+
+    <h3>Day 1: Final prep day</h3>
+    <ul>
+        <li>Release build is created</li>
+        <li>Have a 'release meeting' with members of relevant departments (e.g. some devs, QA, leadership). In this meeting, ensure everyone has an overview of what is being released, make it clear to all who is responsible for pushing the buttons and monitoring the release. See if any last issues are surfaced, get agreement from all that we're ready to release.</li>
+        <li>Confirm translations are integrated.</li>
+        <li>Latest here: announce the update to the community</li>
+        <li>Final light testing pass / smoke test on a testing instance of the game. NOT planning to find anything at this stage, just a final safety check. Real testing happened at prior stages of work already.</li>
+    </ul>
+
+    <h3>Day 2: Pioneer deployment day</h3>
+    <ul>
+        <li>Ensure any fixes or changes since yesterday are integrated.</li>
+        <li>Shortly before planned deployment time, announce planned deployment in team channels.</li>
+        <li>Deploy to pioneer game instances.</li>
+        <li>Confirm successful pioneer deployment in team channels + the pioneer community.</li>
+    </ul>
+
+    <h3>Day 3: Full deployment day</h3>
+    <ul>
+        <li>Ensure any fixes or changes since yesterday are integrated.</li>
+        <li>Shortly before planned deployment time, announce planned deployment in team channels.</li>
+        <li>Deploy to non-pioneer game instances.</li>
+        <li>Confirm successful deployment in team channels and community</li>
+    </ul>
+
+    <p>----------</p>
+    <p>Note: This example is relatively heavy-weight for many contexts, and much too rushed for other contexts.</p>
+    <p>If we wanted to get into discussion about deployment plans and checklists, things can get quite broad from here. </p>
+    <p>There's a lot of interconnected factors. For example, &quot;how often should we deploy?&quot; is an important question. The answer will depend on the state of your testing infrastructure, quality expectations, cost of delays, cost of a deploy, update content, community expectations, etc. Usually, I've found higher frequencies to be better, but that will differ greatly depending on the rest of the context. </p>
+    <p>The deploy checklist will also vary depending on how you're interacting with your source control. Or on what your philosophy is towards iterations and/or releases in general - do you want to have a &quot;release train&quot; always departing at a certain time, or release ad-hoc depending on what you've completed?</p>
+
+</main>
+
+<footer>
+    <br><br>
+    <p>Posts by Robert Aiking (<i><a href="https://www.linkedin.com/in/robert-aiking/">LinkedIn</a></i>)</p>
+    <p><a href="index.html">⮝ Home</a></p>
+</footer>
